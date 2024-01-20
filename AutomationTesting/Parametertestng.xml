@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Test1" >
+  <parameter name="browser" value="Chrome"></parameter>
+  <parameter name="URL" value="https://facebook.com/"></parameter>
+  <parameter name="email" value="nand@gmail.com"></parameter>
+  <parameter name="password" value="nandan@1234"></parameter>
+    <classes>
+      <class name="testNGBasics.ParameterTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test2">
+  <parameter name="browser" value="EDge"></parameter>
+  <parameter name="URL" value="https://facebook.com/"></parameter>
+  <parameter name="email" value="nand@gmail.com"></parameter>
+  <parameter name="password" value="nandan@1234"></parameter>
+    <classes>
+      <class name="testNGBasics.ParameterTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test3">
+  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="URL" value="https://facebook.com/"></parameter>
+  <parameter name="email" value="nand@gmail.com"></parameter>
+  <parameter name="password" value="nandan@1234"></parameter>
+    <classes>
+      <class name="testNGBasics.ParameterTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

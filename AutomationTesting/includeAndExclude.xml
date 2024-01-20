@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="testNGBasics.RegisterTest">
+				<methods>
+					<include name="registerTest1"></include>
+					<include name="registerTest4"></include>
+				</methods>
+			</class>
+			<class name="testNGBasics.LoginTest">
+				<methods>
+					<include name="loginTest2"></include>
+					<include name="loginTest5"></include>
+				</methods>
+			</class>
+			<class name="testNGBasics.PaymentTest">
+				<methods>
+					<exclude name="paymentTest3"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
